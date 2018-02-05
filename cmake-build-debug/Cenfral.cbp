@@ -74,7 +74,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="E:/GitHub/Cenfral/main.c">
+		<Unit filename="E:/GitHub/Cenfral/cenfral.c">
 			<Option target="Cenfral"/>
 		</Unit>
 		<Unit filename="E:/GitHub/Cenfral/CMakeLists.txt">

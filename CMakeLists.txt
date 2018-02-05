@@ -3,4 +3,4 @@ project(Cenfral C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(Cenfral main.c)
+add_executable(Cenfral cenfral.c)
