@@ -1,4 +1,8 @@
-import os
-if not os.path.isdir("logs"):
-    os.makedirs("logs")
+from cenfral.log import LogHandler
+import pip
 
+setup = LogHandler('setup')
+packages = ['fire']
+for m in packages:
+    setup.info('Verifying ' + m)
+    pip.main(['install', m])
