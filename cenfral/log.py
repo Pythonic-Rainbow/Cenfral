@@ -21,11 +21,15 @@ class LogHandler:
 
     def __init__(self, name: str):
         self.logger = logging.getLogger(name)
-        c = logging.StreamHandler()
-        c.setLevel(logging.WARNING)
-        c.setFormatter(logging.Formatter(format))
-        self.logger.addHandler(c)
 
     def info(self, msg: str):
         print(msg)
         self.logger.info(msg)
+
+    def debug(self, msg: str):
+        self.logger.debug(msg)
+
+    def warning(self, msg: str):
+        print('WARNING:', msg)
+        self.logger.warning(msg)
+
